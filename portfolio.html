@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset margins and paddings */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        /* Make iframe fill the entire screen */
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            overflow: auto; /* Allow scrolling */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://colinmak.vercel.app/" 
+            frameborder="0" 
+            scrolling="auto"> 
+    </iframe>
+    <script>
+        const contactForm = document.getElementById('contact');
+ //       const myEmail = contactForm.getElementsByClassName('px-1.5');
+        console.log(contactForm);
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset margins and paddings */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Make iframe fill the entire screen */
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            overflow: auto;
+            /* Allow scrolling */
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://colinmak.vercel.app/" frameborder="0" scrolling="auto"> <!-- Allow scrolling -->
+    </iframe>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                const iframe = document.querySelector('iframe');
+                console.log(iframe);
+                console.log(iframe.contentDocument);
+            }, 2000); // 2000 milliseconds delay
+        };
+    </script>
+</body>
+
+</html>
